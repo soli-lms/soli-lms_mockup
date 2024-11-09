@@ -1,17 +1,29 @@
 # soli-lms_mockup
 
+## Installation de maquette
+
+- Installer les Dépendances
+  
+```bash
+  npm install
+```
+
+- Exécuter le Serveur Intégré PHP
+  
+```bash
+php -S localhost:8000
+```
 
 ## Insertion des modules 
 
-
 ````bash
 # Ajouter ModuleA en tant que sous-module
-git submodule add https://github.com/soli-lms/pkg_rh_mockup.git pkg_rh
-git submodule add https://github.com/soli-lms/pkg_competences_mockup.git pkg_competences
+git submodule add https://github.com/soli-lms/pkg_rh_mockup.git modules/pkg_rh
+git submodule add https://github.com/soli-lms/pkg_competences_mockup.git modules/pkg_competences
 ````
 
 
-## Lab - git 
+## à Ajouter dans Lab_git 
 
 Supprimer un sous module 
 

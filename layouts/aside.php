@@ -3,8 +3,8 @@ $current_route = $_SERVER['REQUEST_URI'];
 ?>
 <aside class="main-sidebar sidebar-dark-info elevation-4 position-fixed">
   <!-- Logo de la marque -->
-  <a href="/view/home.php" class="brand-link">
-    <img src="/view/assets/images/logo.png" class="brand-image img-circle elevation-3" alt="Image de groupe">
+  <a href="/home.php" class="brand-link">
+    <img src="/assets/images/logo.png" class="brand-image img-circle elevation-3" alt="Image de groupe">
     <span class="brand-text font-weight-light text-center h6">Solicode LMS</span>
   </a>
 
@@ -17,7 +17,7 @@ $current_route = $_SERVER['REQUEST_URI'];
         if (isset($_SESSION['email']) && $_SESSION['email'] === 'formateur@solicode.com') {
           ?>
           <li class="nav-item">
-            <a href="/view/home.php"
+            <a href="/home.php"
               class="nav-link <?php echo (strpos($current_route, 'home') !== false) ? 'active' : ''; ?>">
               <i class="nav-icon fas fa-home"></i>
               <p>
@@ -37,14 +37,14 @@ $current_route = $_SERVER['REQUEST_URI'];
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/view/GestionBriefProjet/Formateur/GestionBriefs/index.php"
+                <a href="/GestionBriefProjet/Formateur/GestionBriefs/index.php"
                   class="nav-link <?php echo (strpos($current_route, 'Briefs') !== false) ? 'active' : ''; ?>">
                   <i class="far fa-file-alt nav-icon"></i>
                   <p>Briefs</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/view/pkg_validations/Formateur/Realisations/index.php"
+                <a href="/pkg_validations/Formateur/Realisations/index.php"
                   class="nav-link <?php echo (strpos($current_route, 'Réalisations') !== false) ? 'active' : ''; ?>">
                   <i class="far fa-chart-bar nav-icon"></i>
                   <p>Réalisations</p>
@@ -65,42 +65,42 @@ $current_route = $_SERVER['REQUEST_URI'];
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/view/pkg_rh/Formateur/index.php"
+              <a href="/pkg_rh/Formateur/index.php"
                 class="nav-link <?php echo (strpos($current_route, 'Formateur') !== false) ? 'active' : ''; ?>">
                 <i class="fa-solid fa-chalkboard-user"></i>
                 <p>Gestion Formateurs</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/view/pkg_rh/Apprenant/index.php"
+              <a href="/pkg_rh/Apprenant/index.php"
                 class="nav-link <?php echo (strpos($current_route, 'Apprenant') !== false) ? 'active' : ''; ?>">
                 <i class="fa-solid fa-users"></i>
                 <p>Gestion Apprenants</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/view/pkg_rh/Ville/index.php"
+              <a href="/pkg_rh/Ville/index.php"
                 class="nav-link <?php echo (strpos($current_route, 'Ville') !== false) ? 'active' : ''; ?>">
                 <i class="fa-solid fa-city"></i>
                 <p>Gestion Villes</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/view/pkg_rh/Groupe/index.php"
+              <a href="/pkg_rh/Groupe/index.php"
                 class="nav-link <?php echo (strpos($current_route, 'Groupe') !== false) ? 'active' : ''; ?>">
                 <i class="fa-solid fa-table"></i>
                 <p>Gestion Groupes</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/view/pkg_rh/NiveauxScolaire/index.php"
+              <a href="/pkg_rh/NiveauxScolaire/index.php"
                 class="nav-link <?php echo (strpos($current_route, 'NiveauxScolaire') !== false) ? 'active' : ''; ?>">
                 <i class="fa-solid fa-book"></i>
                 <p>Gestion Niveaux Scolaire</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/view/pkg_rh/Specialite/index.php"
+              <a href="/pkg_rh/Specialite/index.php"
                 class="nav-link <?php echo (strpos($current_route, 'Specialite') !== false) ? 'active' : ''; ?>">
                 <i class="nav-icon fas fa-th"></i>
                 <p>Gestion Spécialité</p>
@@ -150,7 +150,7 @@ $current_route = $_SERVER['REQUEST_URI'];
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/view/autorisation/Autorisations/index.php"
+              <a href="/autorisation/Autorisations/index.php"
                 class="nav-link <?php echo (strpos($current_route, 'Autorisations') !== false) ? 'active' : ''; ?>">
                 <i class="far fa-check-circle nav-icon"></i>
                 <p>Autorisation</p>
@@ -164,14 +164,14 @@ $current_route = $_SERVER['REQUEST_URI'];
               </a>
             </li>
             <li class="nav-item">
-              <a href="/view/autorisation/Controllers/index.php"
+              <a href="/autorisation/Controllers/index.php"
                 class="nav-link <?php echo (strpos($current_route, 'Controllers') !== false) ? 'active' : ''; ?>">
                 <i class="fas fa-gamepad nav-icon"></i>
                 <p>Controllers</p>
               </a>
             </li>
             <li class="nav-item ">
-              <a href="/view/autorisation/Actions/index.php"
+              <a href="/autorisation/Actions/index.php"
                 class="nav-link <?php echo (strpos($current_route, 'Actions') !== false) ? 'active' : ''; ?>">
                 <i class="fas fa-cogs nav-icon"></i>
                 <p>Actions</p>
@@ -183,7 +183,7 @@ $current_route = $_SERVER['REQUEST_URI'];
         } elseif (isset($_SESSION['email']) && $_SESSION['email'] === 'formateur@solicode.com') {
           ?>
               <li class="nav-item">
-                <a href="/view/GestionBriefProjet/Apprenant/index.php" class="nav-link listBriefFormateur">
+                <a href="/GestionBriefProjet/Apprenant/index.php" class="nav-link listBriefFormateur">
                   <i class="fa-solid fa-list-check"></i>
                   <p>Mes Projets</p>
                 </a>
@@ -194,13 +194,13 @@ $current_route = $_SERVER['REQUEST_URI'];
           ?>
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
-                    <a href="/view/GestionCompetences/Modules/index.php" class="nav-link">
+                    <a href="/GestionCompetences/Modules/index.php" class="nav-link">
                         <i class="fas fa-table nav-icon"></i>
                         <p>Modules</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/view/GestionCompetences/Competences/index.php" class="nav-link">
+                    <a href="/GestionCompetences/Competences/index.php" class="nav-link">
                         <i class="fas fa-tasks nav-icon"></i>
                         <p>Compétence</p>
                     </a>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<?php include_once "view/layouts/heade.php" ?>
-<?php
+<?php include_once "layouts/heade.php" ?>
 
+<?php
 if (isset($_POST['login'])) {
     $email = $_POST["email"];
     $password = $_POST["password"];
@@ -11,30 +11,29 @@ if (isset($_POST['login'])) {
     if ($email === 'apprenant@solicode.com') {
         session_start();
         $_SESSION['email'] = $email;
-        header('Location: view/GestionBriefProjet/Apprenant/index.php');
+        header('Location: /GestionBriefProjet/Apprenant/index.php');
         exit();
     }elseif($email === 'formateur@solicode.com'){
         session_start();
         $_SESSION['email'] = $email;
-        header('Location: view/home.php');
+        header('Location: /home.php');
         exit();
     }elseif($email === 'ResponsableFormation@solicode.com'){
         session_start();
         $_SESSION['email'] = $email;
-        header('Location: view/GestionCompetences/Competences/index.php');
+        header('Location: /GestionCompetences/Competences/index.php');
         exit();
     }else{
         header('refresh: 0');
     }
 
 }
-
 ?>
 
 <body class="hold-transition login-page">
 <div class="login-box">
         <div class="login-logo">
-            <img src="./view/assets/images/logo.png" alt="" srcset="" width="90px">
+            <img src="./assets/images/logo.png" alt="" srcset="" width="90px">
             <h4>Gestion des Projet</h4>
         </div>
         <!-- /.login-logo -->
@@ -47,7 +46,13 @@ if (isset($_POST['login'])) {
 
                 <form method="post" action="" >
                     <div class="input-group mb-3">
-                        <input type="email" name="email" value="chef-project@solicode.com" placeholder="Email" class="form-control" autofocus>
+                        
+                        <select name="email" class="form-control" autofocus>
+  <option value="formateur@solicode.com">Formateur</option>
+  <option value="apprenant@solicode.com">Apprenant</option>
+  <option value="ResponsableFormation@solicode.com">Résponsable de formation</option>
+</select>
+
                         <div class="input-group-append">
                             <div class="input-group-text"><span class="fas fa-envelope"></span></div>
                         </div>
@@ -84,8 +89,5 @@ if (isset($_POST['login'])) {
     </div>
     <!-- /.login-box -->
 </body>
-
-<!-- get script -->
-<?php include_once "view/layouts/script-link.php"; ?>
 
 </html>
