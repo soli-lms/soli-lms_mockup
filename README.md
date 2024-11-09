@@ -15,6 +15,15 @@ php -S localhost:8000
 php -S  localhost:8000  -d display_errors=On
 ```
 
+
+## Icone 
+
+-[https://fontawesome.com/v5/search?o=r&m=free](https://fontawesome.com/v5/search?o=r&m=free)
+
+- prompt 
+  - fontawesome v5, proposer icone pour : Gestion de projet
+
+
 ## Règle 
 
 - CSS et JS
@@ -38,6 +47,13 @@ php -S  localhost:8000  -d display_errors=On
 # Ajouter ModuleA en tant que sous-module
 git submodule add https://github.com/soli-lms/pkg_rh_mockup.git modules/pkg_rh
 git submodule add https://github.com/soli-lms/pkg_competences_mockup.git modules/pkg_competences
+git submodule add https://github.com/soli-lms/pkg_creation_projets_mockup.git modules/pkg_creation_projets
+git submodule add https://github.com/soli-lms/pkg_realisation_projets_mockup.git modules/pkg_realisation_projets
+git submodule add https://github.com/soli-lms/pkg_validations_mockup.git modules/pkg_validations
+git submodule add https://github.com/soli-lms/pkg_suivi_mockup.git modules/pkg_suivi
+git submodule add https://github.com/soli-lms/pkg_autorisation_mockup.git modules/pkg_autorisation
+
+
 ````
 
 

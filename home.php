@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<?php include_once "./layouts/heade.php" ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/heade.php' ?>
+
 
 <body class="sidebar-mini" style="height: auto;">
 
     <div class="wrapper">
         <!-- Navigation -->
-        <?php include_once "./layouts/nav.php" ?>
+        <?php include_once $_SERVER['DOCUMENT_ROOT'] ."/layouts/nav.php" ?>
         <!-- Barre latérale -->
-        <?php include_once "./layouts/aside.php" ?>
+        <?php include_once $_SERVER['DOCUMENT_ROOT']."/layouts/aside.php" ?>
 
         <div class="content-wrapper pt-4">
             <div class="content-header">

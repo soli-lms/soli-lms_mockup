@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<?php include_once "layouts/heade.php" ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/heade.php' ?>
 
 <?php
 if (isset($_POST['login'])) {

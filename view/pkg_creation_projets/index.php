@@ -124,6 +124,6 @@
 </body>
 
 <!-- get script -->
-<?php include_once "../layouts/script-link.php"; ?>
+
 
 </html>

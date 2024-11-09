@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <!-- Inclure l'en-tête -->
-<?php include_once "..//layouts/heade.php" ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/heade.php' ?>
 
 <body class="sidebar-mini" style="height: auto;">
 
@@ -11,7 +11,7 @@
         <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/nav.php' ?>
 
         <!-- Barre latérale -->
-        <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/nav.php' ?>
+        <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/aside.php' ?>
 
 
 
@@ -95,12 +95,12 @@
 
 
         <!-- Inclure le pied de page -->
-        <?php include_once "../../../layouts/footer.php" ?>
+        <?php include_once $_SERVER['DOCUMENT_ROOT'] . "/layouts/footer.php" ?>
 
     </div>
 
     <!-- Inclure le script -->
-    <?php include_once "../../../layouts/script-link.php" ?>
+    
 </body>
 
 </html>

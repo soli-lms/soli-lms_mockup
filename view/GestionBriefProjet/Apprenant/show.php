@@ -101,7 +101,7 @@
     </div>
 
     <!-- Inclure le script -->
-    <?php include_once "../../layouts/script-link.php" ?>
+    
 </body>
 
 </html>
