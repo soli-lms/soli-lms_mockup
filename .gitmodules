@@ -16,3 +16,6 @@
 [submodule "modules/pkg_suivi"]
 	path = modules/pkg_suivi
 	url = https://github.com/soli-lms/pkg_suivi_mockup.git
+[submodule "modules/pkg_autorisation"]
+	path = modules/pkg_autorisation
+	url = https://github.com/soli-lms/pkg_autorisation_mockup.git
