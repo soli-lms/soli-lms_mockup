@@ -1,0 +1,6 @@
+[submodule "pkg_rh"]
+	path = pkg_rh
+	url = https://github.com/soli-lms/pkg_rh_mockup.git
+[submodule "pkg_competences"]
+	path = pkg_competences
+	url = https://github.com/soli-lms/pkg_competences_mockup.git
