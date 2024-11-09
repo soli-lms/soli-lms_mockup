@@ -12,7 +12,25 @@
   
 ```bash
 php -S localhost:8000
+php -S  localhost:8000  -d display_errors=On
 ```
+
+## Règle 
+
+- CSS et JS
+  - Chaque module pour avoit sont propore fichier CSS e JS
+  - On peut pas importer des bibliothèque dans un modue 
+    - Il doit être importer globalement et sans sans CDN
+
+- Vérification 
+  - Recherche sur Vs code 
+    - <link
+    - <link rel
+    - <script src
+
+## Bug 
+
+- Le sous-menu de module doit être active pendant la navigation dans un module
 
 ## Insertion des modules 
 
