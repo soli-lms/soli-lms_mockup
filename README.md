@@ -1,5 +1,11 @@
 # soli-lms_mockup
 
+## Branch : Develop pkg_rh
+
+Ce branch ne peut pas être merger dans develop ou main, il est créer pour développer le package pkf_rh avec ces dépendance.
+
+Pour envoyer mettre à jour le maquettes principale, il faut envoyer un pull request depuis le branch develop qui contient tous les modules
+
 ## Installation de maquette
 
 - Installer les Dépendances
