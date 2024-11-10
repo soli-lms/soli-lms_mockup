@@ -1,4 +1,9 @@
-[ 
+[  
+    {
+    "name":"pkg_creation_projets",
+    "titre":"Création des projets"
+    
+},
 {
        "name":"pkg_competences",
        "titre":"Gestion des compétences"
