@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/layouts/heade.php' ?>
+<?php include_once  $config['views_path'] . '/header.php'; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
