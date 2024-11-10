@@ -13,6 +13,10 @@
     "name":"pkg_validations",
     "titre":"Validation des projets"
     
+},   
+{
+    "name":"pkg_suivi",
+    "titre":"Suivi de développement des compétences"
 },
 {
        "name":"pkg_competences",
