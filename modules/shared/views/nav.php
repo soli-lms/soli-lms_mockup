@@ -4,7 +4,7 @@ session_start();
 if (isset($_POST['logout'])) {
     session_destroy();
     $_SESSION = array();
-    header('Location: ../../../../index.php');
+    header('Location: /index.php');
     exit();
 }
 ?>
@@ -21,32 +21,26 @@ if (isset($_POST['logout'])) {
 
         <li class="nav-item dropdown user-menu">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                <img src="/assets/images/man.png" class="user-image img-circle elevation-2"
+                <img src="/modules/shared/assets/images/man.png" class="user-image img-circle elevation-2"
                     alt="Image d'utilisateur">
                 <span class="d-none d-md-inline">
                     <?php
-                    if (isset($_SESSION['email']) && $_SESSION['email'] === 'apprenant@solicode.com') {
-                        echo 'hussein bouik';
-                    } elseif (isset($_SESSION['email']) && $_SESSION['email'] === 'formateur@solicode.com'){
-                        echo 'Formateur';
-                    }elseif(isset($_SESSION['email']) && $_SESSION['email'] === 'ResponsableFormation@solicode.com') {
-                        echo 'ResponsableFormation' ;
-                    }
+                    if (isset($_SESSION['role'])) {
+                        echo $_SESSION['role'];
+                    } 
                     ?>
                 </span>
             </a>
             <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                 <!-- Image d'utilisateur -->
                 <li class="user-header bg-info">
-                    <img src="/assets/images/man.png" class="img-circle elevation-2" alt="Image d'utilisateur">
+                    <img src="/modules/shared/assets/images/man.png" class="img-circle elevation-2" alt="Image d'utilisateur">
                     <p>
-                        <?php
-                        if (isset($_SESSION['email']) && $_SESSION['email'] === 'apprenant@solicode.com') {
-                            echo 'hussein bouik';
-                        } else {
-                            echo 'Formateur';
-                        }
-                        ?> <small>Membre depuis le 28/12/2023</small>
+                    <?php
+                    if (isset($_SESSION['role'])) {
+                        echo $_SESSION['role'];
+                    } 
+                    ?> <small>Membre depuis le 28/12/2023</small>
                     </p>
                 </li>
                 <!-- Pied de page du menu -->
