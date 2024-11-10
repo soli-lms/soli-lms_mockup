@@ -1,8 +1,8 @@
-# Soli-LMS Mockup: Module `pkg_creation_projets`
+# Soli-LMS Mockup: Module `pkg_realisation_projets`
 
-### Branche: `develop_pkg_creation_projets`
+### Branche: `develop_pkg_realisation_projets`
 
-Branche dédiée au développement de `pkg_creation_projets` et ses dépendances, non fusionnable dans `develop` ou `main`. Pour mettre à jour la maquette principale, créer une pull request depuis la branche `develop` intégrant tous les modules.
+Branche dédiée au développement de `pkg_realisation_projets` et ses dépendances, non fusionnable dans `develop` ou `main`. Pour mettre à jour la maquette principale, créer une pull request depuis la branche `develop` intégrant tous les modules.
 
 ### Clonage
 
@@ -10,12 +10,12 @@ Deux options pour cloner :
 
 1. Clone complet avec sous-modules :
    ```bash
-   git clone --recurse-submodules -b develop_pkg_creation_projets --single-branch https://github.com/soli-lms/soli-lms_mockup.git develop_mockup_pkg_creation_projets
+   git clone --recurse-submodules -b develop_pkg_realisation_projets --single-branch https://github.com/soli-lms/soli-lms_mockup.git develop_mockup_pkg_realisation_projets
    ```
 
 2. Clone simple avec initialisation des sous-modules :
    ```bash
-   git clone -b develop_pkg_creation_projets --single-branch https://github.com/soli-lms/soli-lms_mockup.git develop_mockup_pkg_creation_projets
+   git clone -b develop_pkg_realisation_projets --single-branch https://github.com/soli-lms/soli-lms_mockup.git develop_mockup_pkg_realisation_projets
    git submodule init
    git submodule update
    ```
@@ -25,7 +25,7 @@ Deux options pour cloner :
 Pour configurer les sous-modules sur la branche `develop_feature1`, suivez ces étapes :
 
 ```bash
-cd module/pkg_creation_projets
+cd module/pkg_realisation_projets
 git checkout develop_feature1
 ``` 
 
@@ -33,8 +33,8 @@ Ensuite, revenez au répertoire principal pour ajouter et valider cette configur
 
 ```bash
 cd ../..
-git add module/pkg_creation_projets
-git commit -m "Mise à jour du sous-module pkg_creation_projets vers la branche develop_feature1"
+git add module/pkg_realisation_projets
+git commit -m "Mise à jour du sous-module pkg_realisation_projets vers la branche develop_feature1"
 ```
 
 ### Installation

@@ -5,6 +5,11 @@
     
 },
 {
+    "name":"pkg_realisation_projets",
+    "titre":"Réalisation des projets"
+    
+},
+{
        "name":"pkg_competences",
        "titre":"Gestion des compétences"
        
