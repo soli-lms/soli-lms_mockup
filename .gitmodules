@@ -19,3 +19,6 @@
 [submodule "modules/pkg_autorisation"]
 	path = modules/pkg_autorisation
 	url = https://github.com/soli-lms/pkg_autorisation_mockup.git
+[submodule "modules/shared"]
+	path = modules/shared
+	url = https://github.com/soli-lms/pkg_shared_mockup.git
