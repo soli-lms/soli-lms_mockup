@@ -13,3 +13,6 @@
 [submodule "modules/pkg_realisation_projets"]
 	path = modules/pkg_realisation_projets
 	url = https://github.com/soli-lms/pkg_realisation_projets_mockup.git
+[submodule "modules/pkg_validations"]
+	path = modules/pkg_validations
+	url = https://github.com/soli-lms/pkg_validations_mockup.git
