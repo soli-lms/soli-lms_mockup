@@ -20,6 +20,23 @@ Deux options pour cloner :
    git submodule update
    ```
 
+### Après le clonage
+
+Pour configurer les sous-modules sur la branche `develop_feature1`, suivez ces étapes :
+
+```bash
+cd module/pkg_rh
+git checkout develop_feature1
+``` 
+
+Ensuite, revenez au répertoire principal pour ajouter et valider cette configuration du sous-module :
+
+```bash
+cd ../..
+git add module/pkg_rh
+git commit -m "Mise à jour du sous-module pkg_rh vers la branche develop_feature1"
+```
+
 ### Installation
 
 ```bash
