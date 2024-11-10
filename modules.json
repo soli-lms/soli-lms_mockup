@@ -1,4 +1,10 @@
-[ {
+[ 
+{
+       "name":"pkg_competences",
+       "titre":"Gestion des compétences"
+       
+   },
+    {
     "name":"pkg_rh",
     "titre":"Gestion RH"
 }
