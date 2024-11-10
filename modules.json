@@ -10,6 +10,11 @@
     
 },
 {
+    "name":"pkg_validations",
+    "titre":"Validation des projets"
+    
+},
+{
        "name":"pkg_competences",
        "titre":"Gestion des compétences"
        
