@@ -1,48 +1,36 @@
-# Soli-lms mockup : Développement de module pkg_rh
+# Soli-LMS Mockup: Module `pkg_rh`
 
-## Branche : develop_pkg_rh
+### Branche: `develop_pkg_rh`
 
-Ce branch ne peut pas être merger dans develop ou main, il est créer pour développer le package pkf_rh avec ces dépendance.
+Branche dédiée au développement de `pkg_rh` et ses dépendances, non fusionnable dans `develop` ou `main`. Pour mettre à jour la maquette principale, créer une pull request depuis la branche `develop` intégrant tous les modules.
 
-Pour envoyer mettre à jour le maquettes principale, il faut envoyer un pull request depuis le branch develop qui contient tous les modules
+### Clonage
 
+Deux options pour cloner :
 
-## Clone 
+1. Clone complet avec sous-modules :
+   ```bash
+   git clone --recurse-submodules -b develop_pkg_rh --single-branch https://github.com/soli-lms/soli-lms_mockup.git develop_mockup_pkg_rh
+   ```
 
-Il existe deux façon de cloner : 
+2. Clone simple avec initialisation des sous-modules :
+   ```bash
+   git clone -b develop_pkg_rh --single-branch https://github.com/soli-lms/soli-lms_mockup.git develop_mockup_pkg_rh
+   git submodule init
+   git submodule update
+   ```
 
-1. utilisant un seul commande qui clonne le dépôt avec ses dépendance 
+### Installation
 
-````bash
-git clone --recurse-submodules -b develop_pkg_rh --single-branch https://github.com/soli-lms/soli-lms_mockup.git develop_mockup_pkg_rh
-````
-
-2. cloner le dépôt qui installer les modules 
-
-````bash
-
-git clone -b develop_pkg_rh --single-branch https://github.com/soli-lms/soli-lms_mockup.git develop_mockup_pkg_rh
-
-git submodule init
-git submodule update
-````
-
-## Installation
-  
 ```bash
-  npm install
+npm install
 ```
 
-- Exécuter le Serveur Intégré PHP
-  
+Lancer le serveur PHP intégré :
 ```bash
-php -S  localhost:8000  -d display_errors=On
+php -S localhost:8000 -d display_errors=On
 ```
 
-## Pour trouver une icône  
+### Trouver une icône
 
--[https://fontawesome.com/v5/search?o=r&m=free](https://fontawesome.com/v5/search?o=r&m=free)
-
-- prompt 
-  - fontawesome v5, proposer icone pour : Gestion de projet
-
+- [FontAwesome](https://fontawesome.com/v5/search?o=r&m=free)
