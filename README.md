@@ -1,6 +1,6 @@
-# soli-lms_mockup
+# Soli-lms mockup : Développement de module pkg_rh
 
-## Branch : Develop pkg_rh
+## Branche : Develop pkg_rh
 
 Ce branch ne peut pas être merger dans develop ou main, il est créer pour développer le package pkf_rh avec ces dépendance.
 
