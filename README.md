@@ -11,7 +11,6 @@
 - Exécuter le Serveur Intégré PHP
   
 ```bash
-php -S localhost:8000
 php -S  localhost:8000  -d display_errors=On
 ```
 
