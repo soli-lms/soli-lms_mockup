@@ -1,6 +1,14 @@
 # soli-lms_mockup
 
+
 ## Installation de maquette
+
+
+- Clonnage avec les modules 
+
+````bash
+git clone --recurse-submodules <URL-du-depot>
+````
 
 - Installer les Dépendances
   
@@ -39,6 +47,16 @@ php -S  localhost:8000  -d display_errors=On
 ## Bug 
 
 - Le sous-menu de module doit être active pendant la navigation dans un module
+
+
+## Mettre à jour un module 
+
+Initialiser et mettre à jour les sous-modules : Si vous avez cloné un dépôt qui utilise des sous-modules, exécutez les commandes suivantes pour initialiser et télécharger le code des sous-modules :
+
+````bash
+git submodule init
+git submodule update
+````
 
 ## Insertion des modules 
 
