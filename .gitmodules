@@ -4,3 +4,6 @@
 [submodule "modules/shared"]
 	path = modules/shared
 	url = https://github.com/soli-lms/pkg_shared_mockup.git
+[submodule "modules/pkg_suivi_tache"]
+	path = modules/pkg_suivi_tache
+	url = https://github.com/soli-lms/pkg_suivi_tache_mockup.git
