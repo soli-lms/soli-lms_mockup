@@ -36,7 +36,6 @@ cd ../..
 git add module/pkg_creation_projets
 git commit -m "Mise à jour du sous-module pkg_creation_projets vers la branche develop_feature1"
 ```
-
 ### Installation
 
 ```bash
