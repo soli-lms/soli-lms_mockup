@@ -1,5 +1,31 @@
-# soli-lms_mockup
+# Soli-LMS Mockup: Module `pkg_creation_projets`
 
+<<<<<<< HEAD
+### Branche: `develop_pkg_creation_projets`
+
+Branche dédiée au développement de `pkg_creation_projets` et ses dépendances, non fusionnable dans `develop` ou `main`. Pour mettre à jour la maquette principale, créer une pull request depuis la branche `develop` intégrant tous les modules.
+
+### Clonage
+
+Deux options pour cloner :
+
+1. Clone complet avec sous-modules :
+   ```bash
+   git clone --recurse-submodules -b develop_pkg_creation_projets --single-branch https://github.com/soli-lms/soli-lms_mockup.git develop_mockup_pkg_creation_projets
+   ```
+
+2. Clone simple avec initialisation des sous-modules :
+   ```bash
+   git clone -b develop_pkg_creation_projets --single-branch https://github.com/soli-lms/soli-lms_mockup.git develop_mockup_pkg_creation_projets
+   git submodule init
+   git submodule update
+   ```
+
+### Après le clonage
+
+Pour configurer les sous-modules sur la branche `develop_feature1`, suivez ces étapes :
+
+=======
 
 ## Installation de maquette
 
@@ -12,17 +38,35 @@ git clone --recurse-submodules <URL-du-depot>
 
 - Installer les Dépendances
   
+>>>>>>> 0070b0a5560387987ed3be68fff0564e5a84ad97
 ```bash
-  npm install
+cd module/pkg_creation_projets
+git checkout develop_feature1
+``` 
+
+Ensuite, revenez au répertoire principal pour ajouter et valider cette configuration du sous-module :
+
+```bash
+cd ../..
+git add module/pkg_creation_projets
+git commit -m "Mise à jour du sous-module pkg_creation_projets vers la branche develop_feature1"
+```
+### Installation
+
+```bash
+npm install
 ```
 
-- Exécuter le Serveur Intégré PHP
-  
+Lancer le serveur PHP intégré :
 ```bash
-php -S  localhost:8000  -d display_errors=On
+php -S localhost:8000 -d display_errors=On
 ```
 
+### Trouver une icône
 
+<<<<<<< HEAD
+- [FontAwesome](https://fontawesome.com/v5/search?o=r&m=free)
+=======
 ## Icone 
 
 -[https://fontawesome.com/v5/search?o=r&m=free](https://fontawesome.com/v5/search?o=r&m=free)
@@ -103,3 +147,4 @@ git rm --cached pkg_rh
 git commit -m "Suppression du sous-module pkg_rh"
 
 ````
+>>>>>>> 0070b0a5560387987ed3be68fff0564e5a84ad97
